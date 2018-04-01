@@ -1,4 +1,4 @@
-import R from 'ramda';
+import * as R from 'ramda';
 
 export const buildReducer = (initialState, cases) => (state = initialState, action) =>
   cases.hasOwnProperty(action.type)

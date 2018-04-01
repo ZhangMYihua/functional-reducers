@@ -1,5 +1,5 @@
 import { compose, createStore, applyMiddleware } from 'redux';
-import createLogger from 'redux-logger';
+import { createLogger } from 'redux-logger';
 import createHistory from 'history/createHashHistory';
 import { createEpicMiddleware } from 'redux-observable';
 import { routerMiddleware } from 'react-router-redux';
@@ -20,4 +20,6 @@ const store = createStore(
     applyMiddleware(logger),
   )
 );
+
+export default store;
 
