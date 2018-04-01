@@ -1,6 +1,5 @@
 import { connect } from 'react-redux';
 import {
-  createSelector,
   createStructuredSelector
 } from 'reselect';
 import * as R from 'ramda';

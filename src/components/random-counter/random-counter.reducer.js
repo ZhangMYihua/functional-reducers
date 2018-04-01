@@ -7,4 +7,8 @@ const initialState = () => ({
   cachedValue: 0
 });
 
-export default buildReducer(initialState(), createCounterReducerCases('random-counter')());
+const reset = state => ({
+  ...state, counter: 0 
+});
+
+export default buildReducer(initialState(), createCounterReducerCases('random-counter')({reset}));
